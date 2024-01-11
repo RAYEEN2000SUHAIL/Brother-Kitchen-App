@@ -1,0 +1,151 @@
+.container {
+    width: 100 vw;
+    height: 91.8vh;
+    display: flex;
+
+    align-items: center;
+    flex-direction: column;
+}
+
+.image {
+    object-fit: cover;
+    width: 85%;
+    height: 50%;
+    flex: 5;
+    margin: 1rem auto;
+    border-radius: 1.5rem;
+}
+
+
+
+.food-info {
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 85%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.name {
+    color: var(--secondary-color);
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.not {
+    color: gray;
+}
+
+.favorite {
+    color: red;
+}
+
+.product-item-footer {
+    display: flex;
+
+}
+
+.origins {
+    flex: 7;
+}
+
+.origins span {
+    text-transform: capitalize;
+    background-color: var(--secondary-color);
+    color: whitesmoke;
+    border-radius: 2px;
+    padding: 0.08rem .3rem;
+    margin: 0 .2rem;
+    font-size: .8rem;
+}
+
+.cook-time {
+    text-transform: uppercase;
+    font-size: .8rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.cook-time span {
+    margin: 0 .2rem;
+}
+
+.price {
+    font-size: 1.3rem;
+    color: green;
+}
+
+.tags a {
+    background-color: whitesmoke;
+    padding: .2rem .4rem;
+    margin: .2rem;
+    border-radius: 25px;
+    color: gray;
+}
+
+.tags a:hover,
+a:active {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+button {
+    background-color: whitesmoke;
+    padding: .2rem .4rem;
+    margin: .2rem;
+    border-radius: 25px;
+    background-color: var(--secondary-color);
+    color: whitesmoke;
+    border: none;
+    font-size: 1.4rem;
+}
+
+button:hover {
+    cursor: pointer;
+    color: gray;
+    border: 1px solid var(--secondary-color);
+    background-color: whitesmoke;
+
+
+}
+
+@media (min-width:850px) {
+    .container {
+        flex-direction: row;
+        align-items: center;
+        width: 90vw;
+        margin: auto;
+
+
+    }
+
+    .image {
+        flex: 1 0;
+        width: 35rem;
+        height: 25rem;
+        margin: 2rem;
+    }
+
+    .food-info {
+        flex: 1 0;
+        height: 25rem;
+        width: 30rem;
+    }
+
+}
+@media (min-width:850px){
+    .image {
+        flex: 1 0;
+        width: 30rem;
+        height: 25rem;
+        margin: 2rem;
+    }
+}

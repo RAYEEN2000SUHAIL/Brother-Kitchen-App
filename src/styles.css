@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+/* default style  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+/* variable */
+:root {
+    --primary-color: yellow;
+    --secondary-color: rgb(255, 89, 0);
+    --light-bg: white;
+    --dark-bg: black;
+}
+
+
+html{
+    font-family: sans-serif;
+}
